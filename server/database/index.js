@@ -1,12 +1,12 @@
-
-const mysql = require("mysql2");
-const mysqlConfig = require("./config.js");
+// database/index.js
+const mysql = require('mysql2');
+const mysqlConfig = require('./config.js');
 const connection = mysql.createConnection(mysqlConfig);
 
 connection.connect((err) => {
-  if (err) console.log("Error to connect to database", err)
-  else console.log("Database connection established")
-})
+  if (err) console.log('Error to connect to database', err);
+  else console.log('Database connection established');
+});
 
 const db = {
   queryAsync: (query, values) => {
@@ -17,7 +17,8 @@ const db = {
       });
     });
   },
-}
+};
+
 module.exports = {
   db,
-}
+};
