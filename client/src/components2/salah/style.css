@@ -1,0 +1,196 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    height: 100vh;
+    width: 120px; /* Largeur de la sidebar */
+    background: linear-gradient(to  right,  #000000, #3E2723,rgb(217, 214, 214));
+    color: #818181;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Changer la direction de la flexbox en colonne */
+    justify-content: space-between; /* Espacement équitable entre les éléments */
+    padding-top: 20px;
+  }
+  .sidebar a #ic:hover {
+    color: #fafafa;
+  }
+  .sidebar h2 {
+    color: white;
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-direction: column; /* Aligner les icônes verticalement */
+    margin-bottom: 20px; /* Ajout de marge en bas pour l'espace entre la sidebar et les icônes sociales */
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    margin-bottom: 10px; /* Ajout de marge entre les icônes */
+    color: #818181;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    padding: 10px;
+    transition: 0.3s;
+  }
+  
+  .sidebar #fb :hover {
+    color: #0f0b8c;
+  }
+  .sidebar #inst :hover {
+    color: #bc0c0c;
+  }
+  
+  .sidebar a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f1f1f1;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 16px;
+  }
+  /* user navbare */
+  body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    /* background: linear-gradient(to  right,  #000000,rgb(184, 18, 18), #3E2723); */
+background: transparent;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Aligner les éléments à l'extrémité des deux côtés */
+  }
+  
+  
+  
+  .account-icon {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    flex-direction: column;
+    
+  }
+  
+  .account-icon:hover,
+  .search-icon:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .container {
+    position: relative;
+    box-sizing: border-box;
+    width: fit-content;
+    padding-top: 3px;
+   
+  }
+  
+  .mainbox {
+    box-sizing: border-box;
+    position: relative;
+    width: 230px;
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    border-radius: 160px;
+    background-color: rgb(21, 20, 20);
+    transition: all 0.3s ease;
+  }
+  
+  .checkbox:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .checkbox:checked {
+    right: 10px;
+  }
+  
+  .checkbox:checked ~ .mainbox {
+    width: 50px;
+  }
+  
+  .checkbox:checked ~ .mainbox .search_input {
+    width: 0;
+    height: 0px;
+  }
+  
+  .checkbox:checked ~ .mainbox .iconContainer {
+    padding-right: 8px;
+  }
+  
+  .checkbox {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 17px;
+    top: 10px;
+    z-index: 9;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  .search_input {
+    box-sizing: border-box;
+    height: 100%;
+    width: 170px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    font-size: 1em;
+    color: white;
+    transition: all 0.3s ease;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .search_input::placeholder {
+    color: rgba(255, 255, 255, 0.776);
+  }
+  
+  .iconContainer {
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: fit-content;
+    transition: all 0.3s ease;
+  }
+  
+  .search_icon {
+    box-sizing: border-box;
+    fill: white;
+    font-size: 1.3em;
+  }
+  
